@@ -97,6 +97,7 @@ const createDOMNode = (node) => {
   let revealButton = document.createElement("button");
   revealButton.innerText = "↓";
   revealButton.setAttribute("tag", "reveal-button");
+  revealButton.style.marginLeft = "5px";
   if (node.head) {
     let parrentNode = document.getElementById(node.head.id);
     currentNode.style.marginLeft = "10px";
