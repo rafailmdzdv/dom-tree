@@ -82,6 +82,7 @@ let jsonResponse = {
     },
   ],
 };
+
 const loadTree = (nodes) => {
   for (const node of nodes) {
     createDOMNode(node);
@@ -156,7 +157,7 @@ class Node {
         nodeName,
         null,
         Boolean(service.node),
-        service.sorthead,
+        service.sorthead
       );
       checkedNodes.push(currentNode);
       if (service.head) {
